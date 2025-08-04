@@ -12,4 +12,9 @@ class AdminController extends Controller
         // Logic for admin dashboard
         return view('admin.dashboard');
     }
+
+    public function showLoginForm()
+    {
+        return view('admin.auth.login');
+    }
 }

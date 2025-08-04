@@ -22,5 +22,4 @@ Route::middleware('auth')->group(function () {
 
 // require __DIR__.'/auth.php';
 
-Route::get('admin/dashboard',[AdminController::class, 'dashboard'])->name('admin.dashboard')->middleware('auth', 'role:admin');
-Route::get('vendor/dashboard',[VendorController::class, 'dashboard'])->name('vendor.dashboard')->middleware('auth', 'role:vendor');
+Route::get('/admin/login', [AdminController::class, 'showLoginForm'])->name('admin.login');
