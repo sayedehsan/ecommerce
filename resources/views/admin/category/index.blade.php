@@ -49,7 +49,7 @@
                             <div class="table-responsive">
                                 <table class="table table-striped dataTable no-footer" id="table-1" role="grid" aria-describedby="table-1_info">
                                     <thead>
-                                        <th> Id </th>
+                                        <th> Sl </th>
                                         <th> Icon </th>
                                         <th> Name </th>
                                         <th> Status </th>
@@ -59,7 +59,7 @@
                                     <tbody>
                                         @foreach ($getData as $item)
                                         <tr>
-                                            <td>{{$item->id}}</td>
+                                            <td>{{$loop->iteration}}</td>
                                             <td><i class="{{$item->icon}}"></i></td>
                                             <td>{{$item->name}}</td>
                                             <td>

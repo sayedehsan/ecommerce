@@ -18,8 +18,12 @@
               <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Category</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="{{route('admin.categories.index')}}">List</a></li>
-                <li><a class="nav-link" href="layout-transparent.html">Transparent Sidebar</a></li>
-                <li><a class="nav-link" href="layout-top-navigation.html">Top Navigation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Sub-Category</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="{{route('admin.subcategories.index')}}">List</a></li>
               </ul>
             </li>
             <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li>
